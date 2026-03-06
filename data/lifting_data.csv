@@ -1,0 +1,51 @@
+exercise,date,set_number,weight_lbs,reps,volume,muscle_group
+Incline Dumbbell Bench,2024-10-07,1,125.0,9,1125.0,Chest
+Incline Dumbbell Bench,2024-10-07,2,125.0,8,1000.0,Chest
+Incline Dumbbell Bench,2024-10-07,3,125.0,7,875.0,Chest
+Incline Dumbbell Bench,2024-10-14,1,130.0,7,910.0,Chest
+Incline Dumbbell Bench,2024-10-14,2,130.0,6,780.0,Chest
+Incline Dumbbell Bench,2024-10-14,3,130.0,5,650.0,Chest
+Incline Dumbbell Bench,2024-10-21,1,140.0,6,840.0,Chest
+Incline Dumbbell Bench,2024-10-21,2,140.0,6,840.0,Chest
+Incline Dumbbell Bench,2024-10-21,3,140.0,5,700.0,Chest
+Flat DB Press,2024-10-07,1,140.0,4,560.0,Chest
+Flat DB Press,2024-10-07,2,140.0,4,560.0,Chest
+Flat DB Press,2024-10-07,3,140.0,5,700.0,Chest
+Flat DB Press,2024-10-14,1,145.0,4,580.0,Chest
+Flat DB Press,2024-10-14,2,145.0,5,725.0,Chest
+Flat DB Press,2024-10-14,3,145.0,4,580.0,Chest
+Flat DB Press,2024-10-21,1,150.0,3,450.0,Chest
+Flat DB Press,2024-10-21,2,150.0,3,450.0,Chest
+Flat DB Press,2024-10-21,3,150.0,3,450.0,Chest
+Barbell Row,2024-10-14,1,150.0,8,1200.0,Back
+Barbell Row,2024-10-14,2,160.0,8,1280.0,Back
+Barbell Row,2024-10-14,3,170.0,8,1360.0,Back
+Barbell Row,2024-10-21,1,170.0,8,1360.0,Back
+Pull Ups,2024-10-07,1,0.0,11,0.0,Back
+Pull Ups,2024-10-07,2,0.0,7,0.0,Back
+Pull Ups,2024-10-07,3,0.0,8,0.0,Back
+Weighted Pull Ups,2024-10-21,1,55.0,6,330.0,Back
+Weighted Pull Ups,2024-10-21,2,55.0,6,330.0,Back
+Weighted Pull Ups,2024-10-21,3,55.0,6,330.0,Back
+Barbell Curl,2024-10-07,1,85.0,4,340.0,Biceps
+Barbell Curl,2024-10-07,2,85.0,4,340.0,Biceps
+Barbell Curl,2024-10-07,3,85.0,5,425.0,Biceps
+Barbell Curl,2024-10-14,1,100.0,6,600.0,Biceps
+Barbell Curl,2024-10-14,2,100.0,4,400.0,Biceps
+Barbell Curl,2024-10-14,3,100.0,5,500.0,Biceps
+Machine Row,2024-10-07,1,100.0,15,1500.0,Back
+Machine Row,2024-10-07,2,110.0,6,660.0,Back
+Machine Row,2024-10-07,3,120.0,8,960.0,Back
+T-Bar Row,2024-10-14,1,205.0,10,2050.0,Back
+T-Bar Row,2024-10-14,2,205.0,7,1435.0,Back
+T-Bar Row,2024-10-14,3,205.0,8,1640.0,Back
+T-Bar Row,2024-10-21,1,225.0,7,1575.0,Back
+T-Bar Row,2024-10-21,2,225.0,6,1350.0,Back
+Long Pull,2024-10-14,1,190.0,8,1520.0,Back
+Long Pull,2024-10-14,2,190.0,6,1140.0,Back
+Long Pull,2024-10-14,3,190.0,7,1330.0,Back
+Long Pull,2024-10-21,1,95.0,10,950.0,Back
+Long Pull,2024-10-21,2,102.5,7,717.5,Back
+Seated Row,2024-10-21,1,55.0,10,550.0,Back
+Seated Row,2024-10-21,2,55.0,10,550.0,Back
+Seated Row,2024-10-21,3,55.0,10,550.0,Back
