@@ -1,7 +1,7 @@
 import pandas as pd
 import sqlite3
 import plotly.express as px
-from dash import Dash, dcc, html
+from dash import Dash, dcc, html, Input, Output 
 
 #initalizing app
 app = Dash(__name__)
@@ -150,17 +150,49 @@ html.Div(style={"backgroundColor": "#1e1e1e", "padding": "20px", "borderRadius":
     #Chart 2 
     html.H2("Weekly Progression",
         style={"color": "#ffffff", "borderBottom": "1px solid #333333", "paddingBottom": "10px"}),
-    dcc.Graph(figure=fig2),
+    #dropdown filter 
+    dcc.Dropdown(
+        id="exercise-dropdown", #dropdown name so callback can find 
+        options=[{"label": ex, "value": ex} for ex in progression_df["exercise"].unique()], # build list from data 
+        value = None,
+        placeholder= "Filter by exercise", 
+        multi = True, #function lets user pick more then just one exercise
+        style = {"backgroundColor": "#1e1e1e", "color": "#000000", "marginBottom": "20px"}
+    ),
+    
+    dcc.Graph(id="progression-chart"), # chart name so callback can update 
+    
     #Chart 3 
     html.H2("Average Steps by Day of Week",
          style={"color": "#ffffff", "borderBottom": "1px solid #333333", "paddingBottom": "10px"}),   
     dcc.Graph(figure=fig3),
+    
     #Chart 4
     html.H2("Volume vs Reps by Muscle Group",
           style={"color": "#ffffff", "borderBottom": "1px solid #333333", "paddingBottom": "10px"}),   
     dcc.Graph(figure=fig4),
 ])
 
+@app.callback( #function runs when soemhting chnages 
+    Output("progression-chart", "figure"), #chart that gets updated 
+    Input("exercise-dropdown", "value") #trigger the update 
+)
+def update_progression(selected_exercises): #update the progression by selected exercise 
+    if not selected_exercises: #if nothing selected , show all exercise 
+        filtered_df = progression_df #filter data is equal to progressions data 
+    else: #filter data based on what the user picks 
+        filtered_df = progression_df[progression_df["exercise"].isin(selected_exercises)]
+
+    fig = px.line(
+        filtered_df,
+        x="date",
+        y="avg_weight",
+        color="exercise",
+        title="Weekly Progression by Exercise",
+        template="plotly_dark",
+        labels={"avg_weight": "Avg Weight (lbs)", "date": "Date"}
+    )
+    return fig #send the new chart to dashboard 
 
 #run app
 if __name__ == "__main__":
