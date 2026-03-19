@@ -18,3 +18,5 @@ print("health table saved to database")
 
 conn.close()
 
+df = pd.read_csv("../data/lifting_data.csv")
+

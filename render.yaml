@@ -1,0 +1,10 @@
+services :
+- type: web #telling Render this is a web app 
+name: fitness-health-dashboard
+env: python
+buildCommand: "pip install -r requirements.txt && python scripts/database.py"
+#Installs packages and build the database on startup
+startCommand: "gunicorn app:server" #start Dash app with gunicorn
+
+
+

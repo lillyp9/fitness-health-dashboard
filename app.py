@@ -6,6 +6,9 @@ from dash import Dash, dcc, html, Input, Output
 #initalizing app
 app = Dash(__name__)
 
+#server to run 
+server = app.server 
+
 conn = sqlite3.connect("data/fitness.db")
 
 #====================== SQL QUERY 1 : Total volume by exercise
