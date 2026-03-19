@@ -2,10 +2,10 @@ import pandas as pd
 import sqlite3
 
 #Load the data 
-lifting_data = pd.read_csv("../data/lifting_data.csv")
-health_data = pd.read_csv("../data/daily_health_metrics.csv")
+lifting_data = pd.read_csv("data/lifting_data.csv")
+health_data = pd.read_csv("data/daily_health_metrics.csv")
 #connet with database
-conn = sqlite3.connect("../data/fitness.db")
+conn = sqlite3.connect("data/fitness.db")
 
 #.to_sql() - built in method that takes 3 Arugments ("table-name") , ("conn"), ("if_exists")
 #If- exist - have two options ("fail", "replace", "append")- in this case replace 
@@ -18,5 +18,5 @@ print("health table saved to database")
 
 conn.close()
 
-df = pd.read_csv("../data/lifting_data.csv")
+df = pd.read_csv("data/lifting_data.csv")
 

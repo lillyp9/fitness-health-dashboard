@@ -1,8 +1,8 @@
 import pandas as pd
 
 #Create new DataFrames by loading the data from the CSV files
-lifting_df = pd.read_csv('../data/lifting_data.csv')
-health_df = pd.read_csv('../data/daily_health_metrics.csv')
+lifting_df = pd.read_csv('data/lifting_data.csv')
+health_df = pd.read_csv('data/daily_health_metrics.csv')
 
 #Print results
 print("Data Loaded Successfully!")

@@ -4,7 +4,7 @@ import plotly.express as px
 import matplotlib.pyplot as plt 
 
 #connect database
-conn = sqlite3.connect("../data/fitness.db")
+conn = sqlite3.connect("data/fitness.db")
 #SQL QUERY 1 total volume by exercise
 query = """
 SELECT exercise, SUM(volume) AS total_volume

@@ -3,7 +3,7 @@ import sqlite3
 
 
 #connet with database
-conn = sqlite3.connect("../data/fitness.db")
+conn = sqlite3.connect("data/fitness.db")
 #What is the total volume per exercise 
 query = """
 
