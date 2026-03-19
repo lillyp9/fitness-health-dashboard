@@ -162,7 +162,7 @@ fig6 = px.bar(
 )
 
 #======= App Layout =============
-app.layout = html.Div(style={"backgroundColor":"#111111", "fontFamily": "Arial", "padding": "20px"}, children=[
+app.layout = html.Div(style={"backgroundColor":"#111111", "fontFamily": "Arial", "padding": "20px", "margin": "0"}, children=[
     #Title - Heading
     html.H1("Fitness Health Dashboard", 
         style={"textAlign": "center", "color": "#00d4ff", "marginBottom": "10px"}),
