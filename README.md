@@ -53,5 +53,19 @@ CSV DATA (clean data in a csv file ready to use in folder data)
 
 ## Live DEMOS
 **Dash Dashboard** https://fitness-health-dashboard.onrender.com/
+![cards & total volume by exercise](chart1.png)
+
+![Weekly Progession](chart2.png)
+
+![Avg Steps by Day of Week](chart3.png)
+
+![Volume vs Reps](chart4.png)
+
+![Sleeping vs Resting Heart Rate](chart5.png)
+
+![Monthly Steps Trend ](chart6.png)
+
 
 **Tableau Dashboard** https://public.tableau.com/app/profile/lilly.perez2284/viz/FitnessHealthDashboard/Dashboard1#1
+
+![Tableau](tableau.png)
