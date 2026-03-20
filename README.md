@@ -16,7 +16,7 @@ A personal fitness data analyzer that is built with Python and Dash that tracks 
 **Sleep vs heart rate anaylsis**
 **Monthly and Daily steps**
 
-## Instructions how to run locally **
+## Instructions how to run it locally 
 
 1.Clone the reposioty 
 --- git clone github link
