@@ -32,7 +32,7 @@ python3 database.py
 4. Run the app 
 python3 app.py 
 
-** Should say in terminal -- Dash is running on http://127.0.0.1:8050/ **Open Browser**
+**Should say in terminal -- Dash is running on http://127.0.0.1:8050/ **Open Browser**
 
 ##Project Structure##
 CSV DATA (clean data in a csv file ready to use in folder data) ---> PANDAS CLEANING (in script folder , file clean_and_explore_data.py - data is further cleaned out , ask and answer question for further analyzaion )----> SQLITE DATABASE(grabs both csv files and store it in a single file name fitness.db locally, easier to query and anaylsis if the datasets grew) ----> SQL QUERIES - queries that caluclated total volume per exercie , weekly progression, health metrics vy day of week, muscle group performanece -----> PLOTLY CHARTS - in file charts.py -creating a bar, line, scatter charts ----> DASH DASHBOARD- visulaztion dashboard all structures in file app.py. 
